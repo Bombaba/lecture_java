@@ -20,7 +20,9 @@ public class Matrix_main {
 		double c_inv[][] = mlib.getInverse(c);
 		System.out.println("Inverse = " + Arrays.deepToString(c_inv));
 		
-		System.out.println(Arrays.deepToString(mlib.getProduct(c, c_inv)));
+		double d[][] = {{1, 1, 1, 1}, {1, 1, 1, -1}, {1, 1, -1, 1}, {1, -1, 1, 1}};
+		double e[] = {0, 4, -4, 2};
+		System.out.println("Solution = "+ Arrays.toString(mlib.getSolution(d, e)));
 	}
 
 }

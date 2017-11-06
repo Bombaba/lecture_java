@@ -95,5 +95,21 @@ public class Matrix_lib {
 		}
 		return answer;
 	}
+	
+	public double[] getSolution(double[][] A, double[] b)
+	{
+		double[][] c = new double[b.length][1];
+		for (int i = 0; i < b.length; i++)
+		{
+			c[i][0] = b[i];
+		}
+		double[][] sol = this.getProduct(this.getInverse(A), c);
+		double[] ret = new double[sol.length];
+		for (int i = 0; i < ret.length; i++)
+		{
+			ret[i] = sol[i][0];
+		}
+		return ret;
+	}
 		
 }
