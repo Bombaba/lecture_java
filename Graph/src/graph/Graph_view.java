@@ -118,7 +118,7 @@ public class Graph_view extends Frame implements ActionListener, WindowListener{
 		  	                                   true,
 		  	                                   false,
 		  	                                   false);
-			p2.remove(cpanel);
+		  	p2.remove(cpanel);
 		    cpanel = new ChartPanel(chart);
 		    p2.add(cpanel, BorderLayout.CENTER);
 		    p2.revalidate();
