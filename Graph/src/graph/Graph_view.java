@@ -11,8 +11,8 @@ public class Graph_view extends Frame implements ActionListener, WindowListener{
 	
 	private Panel p1 = new Panel();
 	private Panel p2 = new Panel();
-	private Button bBar = new Button("Bar");
-	private Button bLine = new Button("Line");
+	private Button bBar = new Button("BarChart");
+	private Button bLine = new Button("LineChart");
 	private DefaultCategoryDataset data = new DefaultCategoryDataset();
 	private ChartPanel cpanel;
 
